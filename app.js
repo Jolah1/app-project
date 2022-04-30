@@ -118,13 +118,12 @@ const changeColor = document.querySelector(".changeColor");
 
 changeColor.addEventListener('click', function(){
     text.classList.toggle("change");
+    //adding new li
+    const newLi = document.createElement("LI");
+    const liContent = document.createTextNode("listInput.value");
+    console.log(listInput.value);
 })
 
 const userList = document.querySelectorAll(".shoe-list li");
-
-for (user of userList) {
-user.addEventListener("click", function() {
-this.style.color = "red";
-
-});
-}
+const listInput = document.querySelector(".list-input");
+newLi.appendChild()
